@@ -77,6 +77,10 @@ span a {
 span a:hover {
   text-decoration: underline;
 }
+a {
+  text-decoration: underline;
+  color: inherit;
+}
 ul {
   margin-top: 0;
 }
