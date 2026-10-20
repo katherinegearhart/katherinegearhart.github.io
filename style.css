@@ -1,0 +1,114 @@
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+header {
+  position: sticky;
+  top: 0;
+  margin: 0;
+  display: grid;
+  font-family: Inter;
+  grid-template-columns: 25% 50% 25%;
+  justify-content: left;
+  border: 1px solid white;
+}
+header h1 {
+  grid-column: 1;
+  text-align: center;
+  margin: 8pt;
+}
+header a {
+  grid-column: 3;
+  align-self: center;
+  padding-left: calc(100% - 5.5rem);
+}
+header a img {
+  width: 32pt;
+  box-sizing: content-box;
+}
+header a img:hover {
+  filter: invert(1);
+}
+body {
+  background-color: white;
+  color: black;
+  font-family: Inter;
+  margin: 0;
+  font-size: 16px;
+}
+div {
+  padding: 0rem calc(1rem + 8px) 0rem calc(1rem + 8px);
+  width: 48rem;
+  max-width: calc(100% - 2rem - 16px);
+}
+div img {
+  width: 100%;
+  max-width: 25rem;
+  border: 1px solid black;
+}
+img {
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    max-height: 80vh;
+    max-width: 100%;
+    padding: 1rem;
+}
+h2 {
+  margin-bottom: 6pt;
+}
+h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+h2 a:hover {
+  text-decoration: underline;
+}
+span {
+    display: inline-block;
+}
+span a {
+  text-decoration: none;
+  color: inherit;
+}
+span a:hover {
+  text-decoration: underline;
+}
+ul {
+  margin-top: 0;
+}
+[id] {
+    scroll-margin-top: 60px; // 1
+}
+li:target {
+  background-color: #ffa;
+}
+li.highlight {
+  background-color: #ffa;
+}
+pre {
+    overflow: hidden;
+    font-size: min(2.75vw,16px);
+}
+footer {
+  text-align: center;
+  font-family: Inter;
+  height: 70px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+ 
+  bottom: 0;
+  margin: 0;
+  display: grid;
+  font-family: Inter;
+  grid-template-columns: 25% 50% 25%;
+  justify-content: center;
+}
+
+footer p {
+    grid-column: 2
+}
