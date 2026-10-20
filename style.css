@@ -12,7 +12,7 @@ header {
   margin: 0;
   display: grid;
   font-family: Inter;
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 75% 25%;
   justify-content: left;
   border: 1px solid white;
   background-color: white;
@@ -110,12 +110,7 @@ footer {
  
   bottom: 0;
   margin: 0;
-  display: grid;
+  display: block;
   font-family: Inter;
-  grid-template-columns: 25% 50% 25%;
   justify-content: center;
-}
-
-footer p {
-    grid-column: 2
 }
