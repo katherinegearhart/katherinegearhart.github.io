@@ -1,3 +1,4 @@
+/* Inter font setup */
 :root {
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
@@ -20,6 +21,7 @@ header h1 {
   text-align: center;
   margin: 8pt;
 }
+/* Menu icon */
 header a {
   grid-column: 3;
   align-self: center;
