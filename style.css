@@ -15,6 +15,7 @@ header {
   grid-template-columns: 25% 50% 25%;
   justify-content: left;
   border: 1px solid white;
+  background-color: white;
 }
 header h1 {
   grid-column: 1;
