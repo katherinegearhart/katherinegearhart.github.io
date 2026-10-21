@@ -42,24 +42,24 @@ body {
   margin: 0;
   font-size: 16px;
 }
-div {
-  padding: 0rem calc(1rem + 8px) 0rem calc(1rem + 8px);
-  width: 48rem;
-  max-width: calc(100% - 2rem - 16px);
+/* Resize images properly */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
 }
-div img {
+.gallery > * {
+  --ratio: 1;
+  flex: calc(var(--ratio) * 100) 1 calc(var(--ratio) * 280px);
+  height: auto;
+  max-height: 80vh;
+}
+.gallery img {
+  display: block;
   width: 100%;
-  max-width: 25rem;
-  border: 1px solid black;
+  height: auto;
 }
-img {
-    box-sizing: border-box;
-    width: auto;
-    height: auto;
-    max-height: 80vh;
-    max-width: 100%;
-    padding: 1rem;
-}
+
 h2 {
   margin-bottom: 6pt;
 }
