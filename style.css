@@ -103,7 +103,7 @@ li.highlight {
 footer {
   text-align: center;
   font-family: Inter;
-  height: 70px;
+  min-height: 70px;
   background-color: black;
   color: white;
   border: 1px solid black;
