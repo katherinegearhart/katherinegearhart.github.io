@@ -113,4 +113,5 @@ footer {
   display: block;
   font-family: Inter;
   justify-content: center;
+  padding-bottom: env(safe-area-inset-bottom);
 }
