@@ -6,7 +6,7 @@ for (var i = 0; i < imgs.length; i++) {
     if (tag === "") {
         continue;
     }
-    imgs[i].src = "photo/lossyAvif/" + tag + ".avif"
+    imgs[i].src = "photo/80Avif/" + tag + ".avif"
 
     var link = document.createElement("a");
     link.href = tag + ".html";

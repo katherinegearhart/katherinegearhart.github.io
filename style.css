@@ -20,7 +20,7 @@ header {
 }
 header h1 {
   grid-column: 1;
-  text-align: center;
+  text-align: left;
   margin: 8pt;
 }
 /* Menu icon */
