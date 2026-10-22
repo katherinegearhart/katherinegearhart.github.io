@@ -41,7 +41,6 @@ body {
   font-family: Inter;
   margin: 0;
   font-size: 16px;
-  min-height: 100dvh; 
 }
 /* Resize images properly */
 .gallery {
@@ -109,7 +108,7 @@ footer {
   color: white;
   border: 1px solid black;
  
-  bottom: 0;
+  box-sizing: border-box;
   margin: 0;
   display: block;
   font-family: Inter;
