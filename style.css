@@ -42,6 +42,9 @@ body {
   margin: 0;
   font-size: 16px;
 }
+.text {
+  margin: 12pt;
+}
 /* Resize images properly */
 .gallery {
   display: flex;
