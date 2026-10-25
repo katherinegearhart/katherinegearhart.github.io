@@ -62,7 +62,18 @@ body {
   width: 100%;
   height: auto;
 }
-
+/* Image pages */
+.featured {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 96dvw;
+  max-height: 80dvh;
+  width: auto;
+}
+.description {
+  margin: 12pt;
+}
 h2 {
   margin-bottom: 6pt;
 }
@@ -90,19 +101,12 @@ a {
 ul {
   margin-top: 0;
 }
-/* [id] {
-    scroll-margin-top: 60px; // 1
-} */
 li:target {
   background-color: #ffa;
 }
 li.highlight {
   background-color: #ffa;
 }
-/* pre {
-    overflow: hidden;
-    font-size: min(2.75vw,16px);
-} */
 footer {
   text-align: center;
   font-family: Inter;

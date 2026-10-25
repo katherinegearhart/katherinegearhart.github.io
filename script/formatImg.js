@@ -1,20 +1,14 @@
-var imgs = document.querySelectorAll("img");
-for (var i = 0; i < imgs.length; i++) {
-    var img = imgs[i]
+var imgs = document.querySelectorAll(".gallery img");
+
+imgs.forEach(function (img) {
     var tag = img.alt;
 
-    // Exclude non-photos
-    if (tag === "") {
-        continue;
-    }
-    img.src = "photo/80Avif/" + tag + ".avif"
-
+    // Add link and source to image
     var link = document.createElement("a");
-    link.href = tag + ".html";
-
-    // Add link to image
+    link.href = "/photo/" + tag + ".html";
     img.insertAdjacentElement("beforebegin",link);
     link.appendChild(img);
+    img.src = "/photo/80Avif/" + tag + ".avif"
 
     // Calculate aspect ratio
     function setRatio() {
@@ -22,9 +16,5 @@ for (var i = 0; i < imgs.length; i++) {
         var item = img.closest(".gallery > *");
         item.style.setProperty("--ratio", ratio);
     }
-    if (img.complete) {
-        setRatio();
-    } else {
-        img.addEventListener("load", setRatio);
-    }
- }
+    img.addEventListener("load", setRatio);
+});
