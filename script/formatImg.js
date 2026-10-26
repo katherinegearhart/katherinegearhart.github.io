@@ -8,7 +8,7 @@ imgs.forEach(function (img) {
     link.href = "/photo/" + tag + ".html";
     img.insertAdjacentElement("beforebegin",link);
     link.appendChild(img);
-    img.src = "/photo/80Avif/" + tag + ".avif"
+    img.src = "/photo/70Avif/" + tag + ".avif"
 
     // Calculate aspect ratio
     function setRatio() {

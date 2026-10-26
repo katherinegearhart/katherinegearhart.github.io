@@ -7,7 +7,7 @@ for (var i = 0; i < imgs.length; i++) {
     if (tag === "") {
         continue;
     }
-    img.src = "80Avif/" + tag + ".avif"
+    img.src = "90Avif/" + tag + ".avif"
 }
 
 var city = document.querySelector(".city");
