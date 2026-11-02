@@ -18,10 +18,7 @@ class HeadTemplate extends HTMLElement {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Kat's Photos</title>
                 <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-
-                <!-- Inter Font -->
-                <link rel="preconnect" href="https://rsms.me/">
-                <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+                <link rel="stylesheet" href="/font/inter.css">
 
                 <link rel="icon" type="image/png" href="/icon/favicon/16.png" sizes="16x16">
                 <link rel="icon" type="image/png" href="/icon/favicon/32.png" sizes="32x32">
